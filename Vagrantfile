@@ -13,7 +13,7 @@ Vagrant.configure("2") do |config|
     ansible.groups = {
       'sde' => ['default']
     }
-	ansible.sudo = true
+	ansible.become = true
 	ansible.galaxy_role_file = 'provisioning/requirements.yml'
     ansible.playbook = "provisioning/playbook.yml"
   end  
