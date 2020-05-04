@@ -1,6 +1,6 @@
 ---
-- name: Install ubuntu-desktop
+- name: Install xubuntu-desktop
   apt:
-    pkg: ubuntu-desktop
+    pkg: xubuntu-desktop
     state: present
     update_cache: yes

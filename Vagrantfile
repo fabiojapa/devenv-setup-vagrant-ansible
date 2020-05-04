@@ -1,9 +1,9 @@
 Vagrant.configure("2") do |config|
-  config.vm.box = "ubuntu/xenial64"
+  config.vm.box = "ubuntu/eoan64"
 
   config.vm.provider :virtualbox do |vb|
     vb.gui = true
-	vb.memory = 8096
+	vb.memory = 4096
 	vb.cpus = 2
 	vb.customize ["modifyvm", :id, "--uartmode1", "disconnected"]
 	vb.customize ["modifyvm", :id, "--vram", "256"]
